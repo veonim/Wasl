@@ -25,6 +25,12 @@ These files are the source of truth for Wasl. Design, decisions and progress all
 | [architecture/06-payments.md](architecture/06-payments.md) | Payment provider, ledger, fees, custody |
 | [architecture/07-security-privacy-compliance.md](architecture/07-security-privacy-compliance.md) | Security controls, privacy rules, legal questions |
 
+### Design: how it looks
+
+| File | Holds |
+| --- | --- |
+| [design/README.md](design/README.md) | Link to the design canvas, screens drawn and not yet drawn, colour, type and trust-graph conventions |
+
 ### Decisions and questions
 
 | File | Holds |

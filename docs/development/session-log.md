@@ -27,3 +27,14 @@ Append-only. One entry per working session, newest at the bottom. Keep entries s
 **Decided:** D-001 to D-010. Fifteen standing assumptions recorded (A-01 to A-15).
 **Left open:** The design is a first draft and has not been reviewed by the product owner. Twenty-two open questions (Q-01 to Q-22).
 **Next:** `M1-T01`, repository scaffold.
+
+## 2026-11-16: first UI screens
+
+**Module:** design
+**Done:**
+- Drew four screens on the design canvas: cause page (desktop, English), causes listing, My network, cause page (phone, Urdu).
+- Added `docs/design/README.md` with the canvas link, the screens drawn and still to draw, and the colour, type and trust-graph conventions.
+
+**Decided:** nothing confirmed. The palette, typefaces and graph conventions are a working proposal pending Q-10 (brand).
+**Left open:** The screens were not checked as rendered and have not been reviewed. The Urdu copy needs a native reader. Eleven groups of screens are still to draw.
+**Next:** review of the four screens, then the sign-up, submission and no-path screens; or `M1-T01` if build starts first.

@@ -16,11 +16,13 @@
 - Design written and split into `docs/product/` and `docs/architecture/`.
 - Decisions and standing assumptions logged in [decisions.md](../decisions.md).
 - Development process, roadmap and module task lists created.
+- First four UI screens drawn on the design canvas: cause page, causes listing, My network, and the cause page on a phone in Urdu. Visual rules recorded in [design/README.md](../design/README.md).
 
 ## Next up
 
-1. Product owner reviews the design docs. The design is a first draft and has not been reviewed.
-2. Start M1 at `M1-T01`. M1 and M2 need no open question answered.
+1. Product owner reviews the design docs and the four UI screens. Both are first drafts and have not been reviewed.
+2. Draw the remaining screens listed in [design/README.md](../design/README.md), starting with those M1 and M2 need: sign-up and sign-in, the submission form, the no-path and guest cause page.
+3. Start M1 at `M1-T01`. M1 and M2 need no open question answered.
 
 ## Blockers
 

@@ -30,6 +30,7 @@ Everything about what Wasl is, how it is built and where the work stands lives i
 | `docs/README.md` | Index of all docs and the rules for editing them |
 | `docs/product/` | What Wasl is: overview and scope, flows, trust model, seeding plan |
 | `docs/architecture/` | How it is built: system, data model, API, languages, repo and tooling, payments, security and compliance |
+| `docs/design/README.md` | Link to the UI design canvas, screens drawn, visual rules |
 | `docs/decisions.md` | Dated log of decisions and the assumptions still standing |
 | `docs/open-questions.md` | Unanswered questions and which module each one blocks |
 | `docs/development/STATUS.md` | Where the work stands right now |
