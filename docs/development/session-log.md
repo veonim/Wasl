@@ -38,3 +38,15 @@ Append-only. One entry per working session, newest at the bottom. Keep entries s
 **Decided:** nothing confirmed. The palette, typefaces and graph conventions are a working proposal pending Q-10 (brand).
 **Left open:** The screens were not checked as rendered and have not been reviewed. The Urdu copy needs a native reader. Eleven groups of screens are still to draw.
 **Next:** review of the four screens, then the sign-up, submission and no-path screens; or `M1-T01` if build starts first.
+
+## 2026-11-16: SUMMIT design reference applied
+
+**Module:** design
+**Done:**
+- Saved the product owner's SUMMIT glassmorphism reference verbatim in `docs/design/reference.md`.
+- Restyled the four canvas screens to it: navy, pale blue and warm glow palette, Georgia type, glass cards with backdrop blur.
+- Rewrote the visual rules in `docs/design/README.md`, including the glass recipes and three departures from the reference made for contrast, Urdu type and calm motion.
+
+**Decided:** D-011, visual design follows the SUMMIT reference. Q-10 narrowed to logo only.
+**Left open:** The restyled screens were not checked as rendered. Motion is specified but only hover states are drawn.
+**Next:** review of the four screens, then the sign-up, submission and no-path screens in the same style.

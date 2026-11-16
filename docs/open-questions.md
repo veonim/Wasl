@@ -17,7 +17,7 @@ When a question is answered: remove it from here, log the answer in [decisions.m
 | Q-07 | **Zakat.** Should zakat-eligible causes be labelled and their funds kept separate from the first release? | Shapes M2, M4 |
 | Q-08 | **Thresholds.** The goal amount that triggers a second verifier, the proof-of-use deadline, the verification lifetime, the report count that pauses a cause. | Shapes M3, M5 |
 | Q-09 | **Guest donations.** Allowed as assumed, or is an account required for anti-fraud reasons? | Shapes M4 |
-| Q-10 | **Brand.** Is there an existing visual identity, or does design start from scratch? | Shapes M1 |
+| Q-10 | **Logo and name mark.** The visual style is decided (D-011). Is there a logo, or should one be designed? | Shapes M1 |
 | Q-22 | **Legal review.** Data protection law, charity and fundraising regulation, anti-money-laundering duties and tax receipts for the chosen country. | Blocks M6 |
 
 ## Trust graph

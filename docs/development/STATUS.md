@@ -17,6 +17,7 @@
 - Decisions and standing assumptions logged in [decisions.md](../decisions.md).
 - Development process, roadmap and module task lists created.
 - First four UI screens drawn on the design canvas: cause page, causes listing, My network, and the cause page on a phone in Urdu. Visual rules recorded in [design/README.md](../design/README.md).
+- Screens restyled to the SUMMIT glassmorphism reference supplied by the product owner (D-011). The reference is saved in [design/reference.md](../design/reference.md).
 
 ## Next up
 

@@ -23,6 +23,7 @@ A dated log of what has been decided, and a list of the assumptions that stand u
 | D-008 | 2026-11-16 | The trust graph is stored in PostgreSQL and searched with a bidirectional breadth-first search inside the API, not in a separate graph database. | Proposed | [system](architecture/01-system.md) |
 | D-009 | 2026-11-16 | Payments go through hosted checkout behind a `PaymentProvider` interface, with a double-entry append-only ledger. | Proposed | [payments](architecture/06-payments.md) |
 | D-010 | 2026-11-16 | The role is named "presenter" everywhere, in code, routes and docs. "Beneficiary" is the person in need. | Proposed | all |
+| D-011 | 2026-11-16 | The visual design follows the SUMMIT glassmorphism reference: navy `#0c1420`, pale blue `#e8eef8`, steel `#8fa4c4`, warm glow `#ffd9a0`, Georgia type, glass surfaces with backdrop blur. Answers Q-10. | Decided | [design](design/README.md), [reference](design/reference.md) |
 
 ## Standing assumptions
 
