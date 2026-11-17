@@ -17,6 +17,7 @@ This is the largest module. Part A (trust graph) and Part B (baseline checks) ar
 - [Data model](../../architecture/02-data-model.md), Trust, Verification and Audit sections
 - [API](../../architecture/03-api.md), trust rules
 - [Security, privacy and compliance](../../architecture/07-security-privacy-compliance.md), trust graph section
+- [Design language](../../design/design-language.md), especially Graphs
 
 ## Tasks
 
@@ -39,8 +40,9 @@ This is the largest module. Part A (trust graph) and Part B (baseline checks) ar
 ### Part A: trust graph, web
 
 - [ ] `M3-T14` Trust panel on the cause page: paths in words, strongest first, with the no-path and guest states
-- [ ] `M3-T15` Graph view of the paths with a graph library, expandable, mirrored in Urdu, with a plain-text equivalent
-- [ ] `M3-T16` My network page
+- [ ] `M3-T15` Choose the graph library and build one shared graph component that meets every row of the [graph requirements](../../design/design-language.md#graphs): data-driven computed layout, directed links weighted by level, pan and zoom, path highlighting, selection card, expansion, depth control, list equivalent, keyboard use, Urdu mirroring
+- [ ] `M3-T15a` Graph view of the paths in the trust panel, using that component
+- [ ] `M3-T16` My network page, using that component, tested with a synthetic graph of several hundred nodes
 - [ ] `M3-T17` Trust controls: set a level on a person's profile, withdraw, invite, endorse a cause
 
 ### Part B: baseline checks, API
@@ -76,6 +78,7 @@ This is the largest module. Part A (trust graph) and Part B (baseline checks) ar
 - [ ] Withdrawing a link removes the path at once
 - [ ] A cause cannot reach Live without the required checks, and every transition appears in the audit log with a named actor
 - [ ] A verifier cannot review a cause they present
+- [ ] The graph is a real graph: built from API data with a computed layout, and it pans, zooms, highlights paths, opens a card on selection and expands nodes
 - [ ] The graph view works right-to-left and has a text equivalent
 - [ ] Path search on a synthetic graph of realistic size answers within an acceptable time, recorded in Notes
 

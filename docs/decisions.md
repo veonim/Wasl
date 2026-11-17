@@ -24,6 +24,7 @@ A dated log of what has been decided, and a list of the assumptions that stand u
 | D-009 | 2026-11-16 | Payments go through hosted checkout behind a `PaymentProvider` interface, with a double-entry append-only ledger. | Proposed | [payments](architecture/06-payments.md) |
 | D-010 | 2026-11-16 | The role is named "presenter" everywhere, in code, routes and docs. "Beneficiary" is the person in need. | Proposed | all |
 | D-011 | 2026-11-16 | The visual design follows the SUMMIT glassmorphism reference: navy `#0c1420`, pale blue `#e8eef8`, steel `#8fa4c4`, warm glow `#ffd9a0`, Georgia type, glass surfaces with backdrop blur. Answers Q-10. | Decided | [design](design/README.md), [reference](design/reference.md) |
+| D-012 | 2026-11-17 | Graphs are real graphs: rendered from API data with a computed layout, interactive (pan, zoom, path highlighting, selection, expansion). A static drawing is not acceptable in the build. The canvas graphs are style placeholders only. | Decided | [design language](design/design-language.md#graphs), [M3](development/modules/M3-trust-and-checks.md) |
 
 ## Standing assumptions
 

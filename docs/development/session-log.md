@@ -50,3 +50,16 @@ Append-only. One entry per working session, newest at the bottom. Keep entries s
 **Decided:** D-011, visual design follows the SUMMIT reference. Q-10 narrowed to logo only.
 **Left open:** The restyled screens were not checked as rendered. Motion is specified but only hover states are drawn.
 **Next:** review of the four screens, then the sign-up, submission and no-path screens in the same style.
+
+## 2026-11-17: remaining screens and design language
+
+**Module:** design
+**Done:**
+- Drew the remaining 16 screens in the SUMMIT style: sign-up, sign-in, verify, trust panel states, trust actions, submission form, assisted submission, presenter dashboard, payout and proof of use, donation complete, donor history, verifier queue, verifier review, admin console, and two more phone layouts. The canvas now holds 20 artboards.
+- Wrote `docs/design/design-language.md`: tokens, glass recipes, components, states, motion, graph requirements, right-to-left rules, departures from the reference.
+- Rewrote `docs/design/README.md` as the screen inventory with what is not drawn and the limits of the canvas.
+- Added design tokens and base components as task `M1-T13a`, and split the graph work in M3 into a shared graph component plus its two uses.
+
+**Decided:** D-012, graphs must be real, data-driven, interactive graphs. The product owner asked that the canvas graphs not be rebuilt now; they stay as style placeholders.
+**Left open:** Screens not checked as rendered and not reviewed. Urdu copy needs a native reader. Urdu and phone versions exist for only a few screens; the rest follow the design language.
+**Next:** design review, then `M1-T01`.

@@ -15,6 +15,7 @@ A person can sign up, verify, sign in and switch between English and Urdu on a r
 - [English and Urdu](../../architecture/04-languages.md)
 - [Data model](../../architecture/02-data-model.md), Accounts section
 - [Security](../../architecture/07-security-privacy-compliance.md), Security section
+- [Design language](../../design/design-language.md): tokens, glass, components. Screens: `SignUp`, `SignIn`, `Verify` in [design](../../design/README.md)
 
 ## Tasks
 
@@ -39,6 +40,7 @@ A person can sign up, verify, sign in and switch between English and Urdu on a r
 ### Web
 
 - [ ] `M1-T13` Next.js app with TypeScript, Tailwind and the base layout
+- [ ] `M1-T13a` Design tokens from the design language as CSS variables and the Tailwind theme; base components: button, input, select, checkbox row, choice card, chip, badge, card, callout, glass header
 - [ ] `M1-T14` next-intl with `/en` and `/ur` routes, language switcher, locale saved to cookie and profile
 - [ ] `M1-T15` Right-to-left: `dir` on the root element, logical properties only, self-hosted Noto Nastaliq Urdu with its own type scale
 - [ ] `M1-T16` API client generated from the OpenAPI schema, with a CI check that fails when it drifts

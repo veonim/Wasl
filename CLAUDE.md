@@ -30,7 +30,8 @@ Everything about what Wasl is, how it is built and where the work stands lives i
 | `docs/README.md` | Index of all docs and the rules for editing them |
 | `docs/product/` | What Wasl is: overview and scope, flows, trust model, seeding plan |
 | `docs/architecture/` | How it is built: system, data model, API, languages, repo and tooling, payments, security and compliance |
-| `docs/design/README.md` | Link to the UI design canvas, screens drawn, visual rules |
+| `docs/design/README.md` | Link to the UI design canvas and the inventory of screens |
+| `docs/design/design-language.md` | The design language every screen follows: tokens, glass, components, motion, graph requirements |
 | `docs/decisions.md` | Dated log of decisions and the assumptions still standing |
 | `docs/open-questions.md` | Unanswered questions and which module each one blocks |
 | `docs/development/STATUS.md` | Where the work stands right now |
@@ -46,6 +47,8 @@ Everything about what Wasl is, how it is built and where the work stands lives i
 - **Assumptions.** Values marked "assumed" in the docs (three-link depth, 30-day deadlines and so on) go in configuration, not in constants scattered through the code.
 - **Money.** Integer minor units plus a currency code. Ledger and audit log are append-only.
 - **Privacy.** Trust links are never public. Identity and bank documents are never published. No endpoint returns the wider graph.
+- **Design.** Every screen follows `docs/design/design-language.md`. Use its tokens, never raw colours.
+- **Graphs are real graphs.** Built from API data with a computed layout, interactive. Never a static or hand-placed drawing.
 - **Both languages.** Every user-facing string exists in English and Urdu. Use logical CSS properties, never left or right.
 - **Tests.** A task is not done until its tests pass and CI is green.
 - **No secrets in the repository.**

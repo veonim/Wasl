@@ -29,7 +29,8 @@ These files are the source of truth for Wasl. Design, decisions and progress all
 
 | File | Holds |
 | --- | --- |
-| [design/README.md](design/README.md) | Link to the design canvas, screens drawn and not yet drawn, colour, type and trust-graph conventions |
+| [design/README.md](design/README.md) | Link to the design canvas and the inventory of screens drawn |
+| [design/design-language.md](design/design-language.md) | The design language: tokens, glass, components, states, motion, graph requirements, right-to-left rules |
 | [design/reference.md](design/reference.md) | The SUMMIT design reference supplied by the product owner, verbatim |
 
 ### Decisions and questions

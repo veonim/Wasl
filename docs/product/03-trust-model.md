@@ -33,7 +33,7 @@ Ayesha does not know Hamza, but she can see that Bilal trusts him. Bilal is the 
 Every cause page carries a trust panel for the signed-in viewer.
 
 1. **The paths, in words.** "You trust Bilal. Bilal would vouch for Hamza, who presents this cause." The strongest paths are listed first, with the number of independent paths.
-2. **The graph.** The same paths drawn as a graph, viewer on one side and presenter on the other, which the donor can expand outward. A separate My network page shows the donor's whole graph: who they trust, who trusts them, and the causes reachable through it.
+2. **The graph.** The same paths drawn as a real graph: laid out from the data, with pan, zoom, path highlighting and nodes the donor can expand outward. It is never a static picture; see the [graph requirements](../design/design-language.md#graphs). A separate My network page shows the donor's whole graph: who they trust, who trusts them, and the causes reachable through it.
 3. **No path.** The panel says so plainly and leads with the case record instead. A donor with no connections still sees every cause and can donate on that second layer alone.
 
 A guest sees every cause, the full case record and the overall vouch count, with a prompt to sign in to see their own paths.

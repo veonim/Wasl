@@ -1,6 +1,6 @@
 # Status
 
-**Last updated:** 2026-11-16
+**Last updated:** 2026-11-17
 
 ## Where we are
 
@@ -18,11 +18,13 @@
 - Development process, roadmap and module task lists created.
 - First four UI screens drawn on the design canvas: cause page, causes listing, My network, and the cause page on a phone in Urdu. Visual rules recorded in [design/README.md](../design/README.md).
 - Screens restyled to the SUMMIT glassmorphism reference supplied by the product owner (D-011). The reference is saved in [design/reference.md](../design/reference.md).
+- All MVP screens drawn on the canvas, 20 artboards across browsing, accounts, presenter, donor and staff. Inventory in [design/README.md](../design/README.md).
+- Design language written up in [design/design-language.md](../design/design-language.md), including the requirement that graphs are real, data-driven graphs (D-012).
 
 ## Next up
 
-1. Product owner reviews the design docs and the four UI screens. Both are first drafts and have not been reviewed.
-2. Draw the remaining screens listed in [design/README.md](../design/README.md), starting with those M1 and M2 need: sign-up and sign-in, the submission form, the no-path and guest cause page.
+1. Product owner reviews the design docs and the 20 UI screens. All are first drafts and have not been reviewed or checked as rendered.
+2. A native reader checks the Urdu copy on the three Urdu screens.
 3. Start M1 at `M1-T01`. M1 and M2 need no open question answered.
 
 ## Blockers
