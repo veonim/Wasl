@@ -18,11 +18,11 @@ These files are the source of truth for Wasl. Design, decisions and progress all
 | File | Holds |
 | --- | --- |
 | [architecture/01-system.md](architecture/01-system.md) | Components and the design choices behind them |
-| [architecture/02-data-model.md](architecture/02-data-model.md) | The seventeen tables |
+| [architecture/02-data-model.md](architecture/02-data-model.md) | The fifteen tables |
 | [architecture/03-api.md](architecture/03-api.md) | REST endpoints by area |
 | [architecture/04-languages.md](architecture/04-languages.md) | English and Urdu, right-to-left layout |
 | [architecture/05-repo-and-tooling.md](architecture/05-repo-and-tooling.md) | Repository layout, tooling, environments, deployment |
-| [architecture/06-payments.md](architecture/06-payments.md) | Payment provider, ledger, fees, custody |
+| [architecture/06-giving.md](architecture/06-giving.md) | The core rule that no money flows through Wasl, and how direct giving works |
 | [architecture/07-security-privacy-compliance.md](architecture/07-security-privacy-compliance.md) | Security controls, privacy rules, legal questions |
 
 ### Design: how it looks

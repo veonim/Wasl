@@ -50,11 +50,11 @@ This is the largest module. Part A (trust graph) and Part B (baseline checks) ar
 - [ ] `M3-T18` `audit_log` table, append-only by database permission, written on every staff action and status change
 - [ ] `M3-T19` Cause lifecycle state machine matching the diagram in the trust model; remove the M2 shortcut that created causes as Live
 - [ ] `M3-T20` `verification_review` table; verifier queue; approve, reject and request-changes with a written reason
-- [ ] `M3-T21` Checklist per cause: identity, bank account, legal standing, beneficiary consent, optional need review that earns the Platform-checked badge
+- [ ] `M3-T21` Checklist per cause: identity, payment details (stub until M4 adds payment methods), legal standing, beneficiary consent, optional need review that earns the Platform-checked badge
 - [ ] `M3-T22` Two-person rule above the configured goal threshold; conflict-of-interest rule
 - [ ] `M3-T23` Two-factor sign-in for verifiers and admins
 - [ ] `M3-T24` Worker with Arq; expiry job that returns a cause to review after the configured lifetime or a key-fact edit
-- [ ] `M3-T25` Reports: pause donations at the configured count or on a verifier report; admin decision to clear or close
+- [ ] `M3-T25` Reports: pause the cause at the configured count or on a verifier report; admin decision to clear or close
 - [ ] `M3-T26` Evidence views written to the audit log; virus scan before a verifier can open a file
 - [ ] `M3-T27` Status emails to the presenter in their language
 

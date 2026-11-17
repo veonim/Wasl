@@ -6,7 +6,7 @@
 
 ## Goal
 
-A presenter, or staff on their behalf, can submit a cause with evidence, and anyone can browse causes and read the full case record. Causes are created directly in the Live state by seed data or an admin switch until M3 adds review.
+A presenter, or staff on their behalf, can submit a cause with evidence, and anyone can browse causes and read the full case record. Causes are created directly in the Live state by seed data or an admin switch until M3 adds review. How donors pay the presenter is added in M4.
 
 ## Read first
 

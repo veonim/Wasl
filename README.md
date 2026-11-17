@@ -2,6 +2,8 @@
 
 Wasl (وصل, "connection") is a bridge between donors and causes they can trust. Donors see how they are connected, through people they already trust, to the person presenting a cause. Donors with no connection decide on the case record: documents, case details and the presenter's history.
 
+No money flows through Wasl. Donors give directly to the presenter; Wasl shows who to trust and how to pay them.
+
 **Status:** design complete in draft, no code yet. See [`docs/development/STATUS.md`](docs/development/STATUS.md).
 
 ## Where to look

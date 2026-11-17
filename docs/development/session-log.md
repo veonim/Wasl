@@ -63,3 +63,17 @@ Append-only. One entry per working session, newest at the bottom. Keep entries s
 **Decided:** D-012, graphs must be real, data-driven, interactive graphs. The product owner asked that the canvas graphs not be rebuilt now; they stay as style placeholders.
 **Left open:** Screens not checked as rendered and not reviewed. Urdu copy needs a native reader. Urdu and phone versions exist for only a few screens; the rest follow the design language.
 **Next:** design review, then `M1-T01`.
+
+## 2026-11-17: core design change, no money through Wasl
+
+**Module:** design
+**Done:**
+- Recorded the product owner's core rule (D-013): no money flows through Wasl. Donors give directly to the presenter.
+- Removed the payment provider, checkout, webhooks, ledger, payouts, refunds and fees from every doc. Rewrote `architecture/06-giving.md` (was 06-payments), the flows, data model (17 tables down to 15: `payment_method` and `gift` replace `donation`, `payment_event`, `ledger_entry`, `disbursement`), API, system diagram, security and overview.
+- Rewrote module M4 as Giving and M5 as Reporting and administration, and renamed their files. Both are now unblocked.
+- Added the rule to `CLAUDE.md` and a check for it in M6.
+- Redrew the affected screens: the give card on the cause page, Record a gift (replaces Donation complete), Gifts and proof of use (replaces Payout and proof of use), presenter dashboard, donor history, admin console, verifier review, submission form and the Urdu cause page.
+
+**Decided:** D-013. D-009 superseded. Q-02 and Q-03 closed. Assumptions A-07 and A-09 to A-12 rewritten for direct giving.
+**Left open:** Six new questions on giving without handling money (Q-23 to Q-28). I read the rule strictly: Wasl does not process payments at all, not even through a provider that pays presenters directly. Screens not checked as rendered.
+**Next:** design review, then `M1-T01`.

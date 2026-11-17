@@ -25,7 +25,7 @@ A connector is someone who is already asked for help and already vets appeals in
 ## What makes presenting a case worth it
 
 - No platform fee
-- Fast payout to a verified account
+- Gifts go straight into the presenter's own account; nothing is held back or delayed
 - Onboarding and support in Urdu, including over WhatsApp
 - Help with the write-up and documents, so a connector spends minutes, not hours
 - A track record that builds with every finished case and makes the next one easier to fund
@@ -46,6 +46,6 @@ Seeding this way shapes the design in four places.
 These are proposals, not yet confirmed. See [open questions](../open-questions.md).
 
 - Do not open public self-service submission at launch. Unknown presenters with no introducer are the highest fraud risk and the hardest to check.
-- Do not relax the baseline identity and bank checks to speed up onboarding.
+- Do not relax the baseline checks of identity and payment details to speed up onboarding.
 - Do not pay connectors per case. Payment per case turns a vouch into a sale.
 - Do not launch in several communities at once.

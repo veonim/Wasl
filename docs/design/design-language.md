@@ -13,6 +13,7 @@ For Wasl this means:
 - **Warmth marks what matters.** The warm glow colour is reserved for selection, positive status and the single most important surface on a page.
 - **Serif voice.** Georgia gives the product a considered, trustworthy tone, closer to a letter than an app.
 - **Calm where money and evidence are involved.** Glass and glow set the mood; forms, tables and review screens stay plain and legible.
+- **No money through Wasl, and the interface says so.** Wherever giving appears, the screen states that the donor pays the presenter directly. No screen has a pay, checkout, card, balance, payout or refund control.
 
 ## Tokens
 
@@ -155,6 +156,7 @@ These map directly to the Tailwind theme in `apps/web`. Components use the token
 | Member header | Glass header: wordmark at the start, navigation, language switch, account. |
 | Staff header | Solid ink with white text and "Wasl staff". Staff screens are visibly different from member screens. |
 | Wordmark | وصل in Noto Nastaliq Urdu beside "Wasl" in Georgia 700. A logo is still an open question (Q-10). |
+| Payment details block | A list row per method: a caption for the kind, the account title in weight 700, the number in the system face, and a Copy button. Always under a callout saying the donor gives directly, and followed by the date a reviewer checked the account title. Shown only on Live causes. |
 | Photo placeholder | Until real photography exists: a tinted panel with a dashed border and a label. |
 
 Icons are simple line icons, 2px stroke, ink colour. No emoji.
@@ -255,3 +257,4 @@ The library is chosen in module M3. Cytoscape.js is the working candidate.
 - Do not stack glass on glass more than one level; use an inset panel inside a card.
 - Do not animate anything a person is reading or typing into.
 - Do not ship a graph that is a static drawing.
+- Do not design any control that takes, holds, moves or returns money.

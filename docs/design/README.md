@@ -11,6 +11,8 @@ The screens are drawn on a design canvas outside this repository. This folder re
 
 **Status:** all MVP screens drawn in the SUMMIT style as a first draft. Not yet reviewed, and not checked as rendered.
 
+**Core rule shown on every money-related screen:** no money flows through Wasl (D-013). Screens show the presenter's payment details and a record of gifts; none of them takes a payment.
+
 ## Screens drawn
 
 All content on the canvas is invented sample data. The currency shown (Rs) is a placeholder; the target country is undecided (Q-01).
@@ -19,7 +21,7 @@ All content on the canvas is invented sample data. The currency shown (Rs) is a 
 
 | Screen | Artboard | Shows |
 | --- | --- | --- |
-| Cause page | `Main` | Trust panel with two paths, the case, the full case record, donate card, presenter card, sharing |
+| Cause page | `Main` | Trust panel with two paths, the case, the full case record, the give card (confirmed total, the no-money statement, the presenter's payment details with account title, "I have given"), presenter card, sharing |
 | Causes listing | `Home` | Search, filters, sort by closeness, cards with a trust chip for connected and unconnected causes |
 | My network | `Network` | The viewer's graph to two links, link levels, people who trust you, causes within reach |
 | Cause page, phone, Urdu | `MobileUrdu` | Right-to-left layout, Nastaliq type, trust path stacked vertically, case record summary |
@@ -40,17 +42,17 @@ All content on the canvas is invented sample data. The currency shown (Rs) is a 
 
 | Screen | Artboard | Shows |
 | --- | --- | --- |
-| Present a cause | `Submit` | The five-part form: the case in both languages, beneficiary and consent, money breakdown, case documents with publish choice, private identity and bank details |
+| Present a cause | `Submit` | The five-part form: the case in both languages, beneficiary and consent, money breakdown, case documents with publish choice, identity for the reviewer, and the payment details donors will use |
 | Assisted submission | `AssistedSubmit` | Staff entering a cause on a presenter's behalf, with the confirm-before-review rule |
-| Presenter dashboard | `PresenterDashboard` | A live cause with status steps, raised, paid out and available, the proof-of-use deadline; a cause with changes requested; finished cases |
-| Payout and proof of use | `Disbursement` | The proof-of-use form, the payout request locked until proof is posted, payout history |
+| Presenter dashboard | `PresenterDashboard` | A live cause with status steps; amounts confirmed received, waiting to be confirmed and accounted for; the proof-of-use deadline; a cause with changes requested; finished cases |
+| Gifts and proof of use | `GiftsProof` | Gifts reported by donors for the presenter to confirm or mark not received, adding an unrecorded gift, and the proof-of-use form |
 
 ### Donor
 
 | Screen | Artboard | Shows |
 | --- | --- | --- |
-| Donation complete | `DonationSuccess` | Confirmation, fee breakdown, the path the donor gave through |
-| Donor history | `DonorHistory` | Totals and a table of donations with path, proof-of-use status and receipt |
+| Record a gift | `RecordGift` | The donor records a gift they sent directly: amount, date, method, reference, optional proof; what happens next; the path kept with the gift |
+| Donor history | `DonorHistory` | Totals and a table of recorded gifts with path, whether the presenter confirmed, and proof-of-use status |
 
 ### Staff
 
@@ -58,7 +60,7 @@ All content on the canvas is invented sample data. The currency shown (Rs) is a 
 | --- | --- | --- |
 | Verifier queue | `VerifierQueue` | Filter tabs and the table of causes waiting, with flags |
 | Verifier review | `VerifierReview` | The case and evidence beside the baseline checklist, notes and the three decisions |
-| Admin console | `Admin` | Payout approvals, a reported cause with donations paused, the latest audit log entries |
+| Admin console | `Admin` | Changed payment details waiting for a check, a reported cause with its payment details hidden, the latest audit log entries |
 
 ## Not drawn
 
@@ -66,9 +68,10 @@ These are covered by the design language and existing screens, and have no artbo
 
 - **Urdu versions of most screens.** Three phone screens are drawn in Urdu. Every other screen mirrors by the rules in the design language.
 - **Phone layouts of most screens.** Pages are fluid and stack; only three phone layouts are drawn explicitly.
-- **Donation failure and cancel pages.** Same layout as Donation complete with different copy.
+- **Presenter's payment methods screen** and the **gift recorded confirmation**. They use the form and callout components.
+- **Disputed gifts** in the admin console.
 - **Password reset.** Same layout as Sign in.
-- **Admin sub-pages:** users, causes, refunds and the full audit log. They use the table and list-row components.
+- **Admin sub-pages:** users, causes and the full audit log. They use the table and list-row components.
 - **Error, loading and empty states**, which are specified in the design language.
 - **A logo.** The wordmark is a placeholder (Q-10).
 

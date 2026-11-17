@@ -2,6 +2,8 @@
 
 Wasl (وصل, "connection") is a web platform where donors give to causes they can trace a line of trust to. Its core is a trust graph: people say who they trust, and a donor sees how they are connected to whoever presents a cause.
 
+**No money flows through Wasl.** Donors give directly to the presenter, outside Wasl. Wasl never processes, holds or routes money, and nothing may be built that does.
+
 Stack: Next.js (TypeScript) frontend, FastAPI (Python) backend, PostgreSQL. Languages: English and Urdu, right-to-left from day one.
 
 ## The docs are the source of truth
@@ -29,7 +31,7 @@ Everything about what Wasl is, how it is built and where the work stands lives i
 | --- | --- |
 | `docs/README.md` | Index of all docs and the rules for editing them |
 | `docs/product/` | What Wasl is: overview and scope, flows, trust model, seeding plan |
-| `docs/architecture/` | How it is built: system, data model, API, languages, repo and tooling, payments, security and compliance |
+| `docs/architecture/` | How it is built: system, data model, API, languages, repo and tooling, giving without handling money, security and compliance |
 | `docs/design/README.md` | Link to the UI design canvas and the inventory of screens |
 | `docs/design/design-language.md` | The design language every screen follows: tokens, glass, components, motion, graph requirements |
 | `docs/decisions.md` | Dated log of decisions and the assumptions still standing |
@@ -45,8 +47,9 @@ Everything about what Wasl is, how it is built and where the work stands lives i
 - **Terminology.** The person who puts a cause on Wasl is the **presenter**. The person in need is the **beneficiary**. They are often different people. Use these words in code, routes and docs.
 - **Scope.** Build only what the active module lists. New ideas go into `docs/open-questions.md` or the roadmap, not into the code.
 - **Assumptions.** Values marked "assumed" in the docs (three-link depth, 30-day deadlines and so on) go in configuration, not in constants scattered through the code.
-- **Money.** Integer minor units plus a currency code. Ledger and audit log are append-only.
-- **Privacy.** Trust links are never public. Identity and bank documents are never published. No endpoint returns the wider graph.
+- **No money through Wasl.** No payment provider, checkout, balance, payout, refund or fee. Wasl shows the presenter's checked payment details and records gifts that donors report and presenters confirm. If a task seems to need a payment, stop: it conflicts with decision D-013. See `docs/architecture/06-giving.md`.
+- **Amounts.** Integer minor units plus a currency code. The audit log is append-only.
+- **Privacy.** Trust links are never public. Identity documents are never published. Payment details show only on Live causes. No endpoint returns the wider graph.
 - **Design.** Every screen follows `docs/design/design-language.md`. Use its tokens, never raw colours.
 - **Graphs are real graphs.** Built from API data with a computed layout, interactive. Never a static or hand-placed drawing.
 - **Both languages.** Every user-facing string exists in English and Urdu. Use logical CSS properties, never left or right.

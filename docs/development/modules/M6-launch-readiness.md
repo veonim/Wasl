@@ -20,6 +20,7 @@ Wasl is safe to put in front of real donors and real cases, and a pilot runs in 
 
 - [ ] `M6-T01` Security review against the controls in the security doc, with findings fixed or logged
 - [ ] `M6-T02` Check every endpoint for role and ownership enforcement; specific test that no endpoint leaks trust links
+- [ ] `M6-T02a` Confirm nothing in the codebase or its dependencies processes, holds or routes money (D-013)
 - [ ] `M6-T03` Retention jobs: delete evidence documents after the retention period
 - [ ] `M6-T04` Legal pages in both languages: terms, privacy notice, how trust links are used and shown
 
@@ -32,9 +33,9 @@ Wasl is safe to put in front of real donors and real cases, and a pilot runs in 
 ### Operations
 
 - [ ] `M6-T08` Staging and production environments in the chosen region
-- [ ] `M6-T09` Error tracking, uptime checks, alerts on webhook failures and ledger mismatches
+- [ ] `M6-T09` Error tracking, uptime checks, alerts on failed jobs and on cause totals that disagree with their gift rows
 - [ ] `M6-T10` Backups with point-in-time recovery, and a restore drill
-- [ ] `M6-T11` Runbook: deploy, roll back, handle a fraud report, handle a payment incident
+- [ ] `M6-T11` Runbook: deploy, roll back, handle a fraud report, handle a disputed gift and a changed payment detail
 
 ### Pilot
 
@@ -48,7 +49,7 @@ Wasl is safe to put in front of real donors and real cases, and a pilot runs in 
 - [ ] A restore from backup has been done and timed
 - [ ] Legal review is complete for the launch country
 - [ ] Both languages pass the accessibility checks
-- [ ] Real causes are live, entered through assisted submission, with at least one donation made through a trust path
+- [ ] Real causes are live, entered through assisted submission, with at least one gift recorded through a trust path and confirmed by its presenter
 
 ## Notes
 
