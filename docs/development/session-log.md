@@ -77,3 +77,11 @@ Append-only. One entry per working session, newest at the bottom. Keep entries s
 **Decided:** D-013. D-009 superseded. Q-02 and Q-03 closed. Assumptions A-07 and A-09 to A-12 rewritten for direct giving.
 **Left open:** Six new questions on giving without handling money (Q-23 to Q-28). I read the rule strictly: Wasl does not process payments at all, not even through a provider that pays presenters directly. Screens not checked as rendered.
 **Next:** design review, then `M1-T01`.
+
+## 2026-11-17: documentation stencil
+
+**Module:** design
+**Done:** Added `stencil/`, a project-agnostic copy of the documentation and development-tracking structure (CLAUDE.md anchor, docs index, product, architecture, design, decisions, open questions, STATUS, roadmap, session log, module template) with placeholders and a guide in `stencil/README.md`.
+**Decided:** nothing.
+**Left open:** nothing.
+**Next:** design review, then `M1-T01`.

@@ -14,6 +14,7 @@ No money flows through Wasl. Donors give directly to the presenter; Wasl shows w
 - [`docs/architecture/01-system.md`](docs/architecture/01-system.md): how it is built
 - [`docs/development/roadmap.md`](docs/development/roadmap.md): what gets built, in what order
 - [`CLAUDE.md`](CLAUDE.md): working rules for AI-assisted sessions
+- [`stencil/`](stencil/README.md): a blank copy of this documentation and tracking structure, for starting other projects
 
 ## Stack
 
