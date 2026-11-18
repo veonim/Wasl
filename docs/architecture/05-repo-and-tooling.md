@@ -4,7 +4,7 @@ One repository holds both services, so a contract change and its frontend update
 
 ## Layout
 
-This is the target layout. Only `docs/` and the root files exist today; see [STATUS](../development/STATUS.md).
+This is the target layout. What exists today is listed in [STATUS](../development/STATUS.md).
 
 ```text
 wasl/
@@ -26,7 +26,11 @@ wasl/
       migrations/        Alembic
       tests/
   docs/                  source of truth: product, architecture, development
+  infra/                 config for local services (storage keys)
+  stencil/               blank copy of the docs structure for other projects
   docker-compose.yml     postgres, redis, object storage, mail catcher
+  .env.example           local-only settings for docker-compose.yml
+  .editorconfig
   .github/workflows/     CI
 ```
 
@@ -36,7 +40,7 @@ wasl/
 | --- | --- |
 | Python tooling | uv, Ruff, mypy, pytest with a real PostgreSQL in CI |
 | Frontend tooling | pnpm, ESLint, Prettier, Vitest, Playwright for end-to-end tests in both locales |
-| Local development | `docker compose up` for dependencies; fake storage, email and SMS providers so no external accounts are needed |
+| Local development | `docker compose up` for dependencies: PostgreSQL 16, Redis, SeaweedFS as the S3-compatible store, Mailpit as the mail catcher. Fake storage, email and SMS providers in tests, so no external accounts are needed |
 | CI | Lint, type-check, tests, OpenAPI client drift check, dependency and secret scan on every pull request |
 
 ## Environments and operations

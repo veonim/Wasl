@@ -16,6 +16,25 @@ No money flows through Wasl. Donors give directly to the presenter; Wasl shows w
 - [`CLAUDE.md`](CLAUDE.md): working rules for AI-assisted sessions
 - [`stencil/`](stencil/README.md): a blank copy of this documentation and tracking structure, for starting other projects
 
+## Local development
+
+Dependencies run in Docker. You need Docker with Compose v2.
+
+```bash
+docker compose up -d
+```
+
+| Service | Address | Notes |
+| --- | --- | --- |
+| PostgreSQL 16 | `localhost:5432` | user `wasl`, database `wasl` |
+| Redis | `localhost:6379` | job queue and rate limits |
+| Object storage (SeaweedFS, S3-compatible) | `http://localhost:8333` | keys in `infra/seaweedfs/s3.json` |
+| Mail catcher (Mailpit) | SMTP `localhost:1025`, inbox at `http://localhost:8025` | every email the API sends lands here |
+
+All values are for local development only. To change ports or passwords, copy `.env.example` to `.env`. To wipe local data, run `docker compose down -v`.
+
+The commands to start the API and the web app are added with `M1-T03` and `M1-T13`.
+
 ## Stack
 
 Next.js and TypeScript on the frontend, FastAPI and Python on the backend, PostgreSQL, Redis. English and Urdu with right-to-left layout.

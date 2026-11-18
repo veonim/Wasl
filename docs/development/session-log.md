@@ -85,3 +85,11 @@ Append-only. One entry per working session, newest at the bottom. Keep entries s
 **Decided:** nothing.
 **Left open:** nothing.
 **Next:** design review, then `M1-T01`.
+
+## 2026-11-18: M1-T01 repository scaffold
+
+**Module:** M1
+**Done:** `M1-T01`. Added `.gitignore`, `.editorconfig`, `.env.example`, `docker-compose.yml` (PostgreSQL 16, Redis 8.8, SeaweedFS 4.54 for S3, Mailpit 1.34, all on localhost only), `infra/seaweedfs/s3.json`, and placeholder READMEs for `apps/api` and `apps/web`. Root README has a local development section. Repo and tooling doc updated.
+**Decided:** nothing. SeaweedFS replaces MinIO for local storage because MinIO no longer publishes images; noted in M1.
+**Left open:** Services validated with `docker compose config` but not started; this session had no Docker daemon.
+**Next:** `M1-T02`, CI workflow, then `M1-T03`.

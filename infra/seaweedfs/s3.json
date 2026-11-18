@@ -1,0 +1,14 @@
+{
+  "identities": [
+    {
+      "name": "wasl-local",
+      "credentials": [
+        {
+          "accessKey": "wasl-local",
+          "secretKey": "wasl-local-only"
+        }
+      ],
+      "actions": ["Admin", "Read", "Write", "List", "Tagging"]
+    }
+  ]
+}

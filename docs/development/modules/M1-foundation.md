@@ -1,6 +1,6 @@
 # M1 Foundation
 
-**Status:** Not started
+**Status:** In progress
 **Depends on:** nothing
 **Blocked by:** nothing
 
@@ -21,7 +21,7 @@ A person can sign up, verify, sign in and switch between English and Urdu on a r
 
 ### Repository
 
-- [ ] `M1-T01` Scaffold the repository: `apps/web`, `apps/api`, root `.gitignore`, `.editorconfig`, and `docker-compose.yml` with PostgreSQL, Redis, object storage and a mail catcher
+- [x] `M1-T01` Scaffold the repository: `apps/web`, `apps/api`, root `.gitignore`, `.editorconfig`, and `docker-compose.yml` with PostgreSQL, Redis, object storage and a mail catcher
 - [ ] `M1-T02` CI workflow: lint, type-check and tests for both apps on every pull request, plus dependency and secret scanning
 
 ### API
@@ -61,4 +61,7 @@ A person can sign up, verify, sign in and switch between English and Urdu on a r
 
 ## Notes
 
-Nothing yet.
+- **M1-T01 (2026-11-18).** Local object storage is SeaweedFS (`chrislusf/seaweedfs:4.54`), not MinIO: MinIO no longer publishes Docker images. It is S3-compatible, so the storage provider in M2-T02 is unaffected. Its bucket is not created by compose; the storage provider creates it on start.
+- **M1-T01.** Image versions are pinned to a major or minor line: `postgres:16-alpine`, `redis:8.8-alpine`, `axllent/mailpit:v1.34`. All ports bind to `127.0.0.1`.
+- **M1-T01.** Verified by `docker compose config` with defaults and with `.env.example`, and the published tags were confirmed on Docker Hub. The services have not yet been started: the session that built this had no Docker daemon. First person to run `docker compose up -d` should confirm all four come up healthy and note it here.
+- **M1-T01.** CI does not exist until `M1-T02`, so the "CI is green" part of done is checked there.

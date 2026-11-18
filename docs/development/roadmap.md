@@ -4,7 +4,7 @@ Six modules, built in order. Each ends in something a person can click through. 
 
 | Module | Delivers | Depends on | Status | Blocked by |
 | --- | --- | --- | --- | --- |
-| [M1 Foundation](modules/M1-foundation.md) | Repo scaffold, CI, design tokens and base components, sign-up and sign-in, roles, English and Urdu shell | none | Not started | none |
+| [M1 Foundation](modules/M1-foundation.md) | Repo scaffold, CI, design tokens and base components, sign-up and sign-in, roles, English and Urdu shell | none | In progress | none |
 | [M2 Causes](modules/M2-causes.md) | Submission, assisted submission, public listing, cause page with the case record, share previews | M1 | Not started | none |
 | [M3 Trust graph and baseline checks](modules/M3-trust-and-checks.md) | Trust links, path search, a real interactive graph, trust panel, My network; verifier queue, cause lifecycle, audit log | M2 | Not started | Q-12, Q-14 |
 | [M4 Giving](modules/M4-giving.md) | Checked payment details on the cause page, recording a gift, presenter confirmation, totals, acknowledgements | M3 | Not started | none |

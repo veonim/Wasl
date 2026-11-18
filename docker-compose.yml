@@ -1,0 +1,75 @@
+# Local development dependencies for Wasl.
+#
+#   docker compose up -d      start everything
+#   docker compose ps         check health
+#   docker compose down       stop (data is kept)
+#   docker compose down -v    stop and delete all local data
+#
+# Ports bind to 127.0.0.1 only. Settings can be overridden in .env (see
+# .env.example). Nothing here is used in staging or production.
+#
+# There is deliberately no payment service: no money flows through Wasl (D-013).
+
+name: ${COMPOSE_PROJECT_NAME:-wasl}
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-wasl}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-wasl-local-only}
+      POSTGRES_DB: ${POSTGRES_DB:-wasl}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  redis:
+    image: redis:8.8-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "127.0.0.1:${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  # S3-compatible object storage for evidence documents and cause images.
+  # The API's storage provider creates its bucket on start (M2-T02).
+  storage:
+    image: chrislusf/seaweedfs:4.54
+    command:
+      - server
+      - -dir=/data
+      - -s3
+      - -s3.port=8333
+      - -s3.config=/etc/seaweedfs/s3.json
+    ports:
+      - "127.0.0.1:${S3_PORT:-8333}:8333"
+    volumes:
+      - storage-data:/data
+      - ./infra/seaweedfs/s3.json:/etc/seaweedfs/s3.json:ro
+    restart: unless-stopped
+
+  # Catches every email the API sends in development. Web UI on port 8025.
+  mail:
+    image: axllent/mailpit:v1.34
+    ports:
+      - "127.0.0.1:${MAIL_SMTP_PORT:-1025}:1025"
+      - "127.0.0.1:${MAIL_UI_PORT:-8025}:8025"
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+  redis-data:
+  storage-data:
